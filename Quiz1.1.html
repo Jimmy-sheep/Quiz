@@ -1,24 +1,25 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>My Document</title>
     <script type="text/javascript">
-	  function AddBtn() {
-	  var btn = document.createElement("BUTTON");
-	  btn.innerHTML = "Change this document.";
-	  btn.id= "myBtn";
-	  document.body.appendChild(btn);
-	  } 
+	  function addBtn() {
+	  var Btn = document.createElement("BUTTON");
+	  Btn.innerHTML = "Change this document.";
+	  document.body.appendChild(Btn);
+	  Btn.addEventListener("click", change);
+	  }
 	  
-	  document.getElementById("myBtn").addEventListener("click", function() {
+      function change() {
         var header = document.getElementById("Hid");
         header.innerHTML = "CSIE@CGU";
         var para = document.getElementById("Pid");
         para.innerHTML = "怎麼那麼棒！！.";
-      });
+      }
     </script>
   </head>
   <body>
-    <button onclick="AddBtn()">Try it</button>
+    <input type="button" onclick="addBtn()" value="Try it">
     <h1 id="Hid">CGU</h1>
     <p id="Pid">好棒棒</p>
   </body>
