@@ -2,18 +2,24 @@
   <head>
     <title>My Document</title>
     <script type="text/javascript">
-      function change() {
+	  function AddBtn() {
+	  var btn = document.createElement("BUTTON");
+	  btn.innerHTML = "Change this document.";
+	  btn.id= "myBtn";
+	  document.body.appendChild(btn);
+	  } 
+	  
+	  document.getElementById("myBtn").addEventListener("click", function() {
         var header = document.getElementById("Hid");
         header.innerHTML = "CSIE@CGU";
         var para = document.getElementById("Pid");
         para.innerHTML = "怎麼那麼棒！！.";
-      }
+      });
     </script>
   </head>
   <body>
-    <input type="button" value="Change this document." onclick="change()">
+    <button onclick="AddBtn()">Try it</button>
     <h1 id="Hid">CGU</h1>
     <p id="Pid">好棒棒</p>
   </body>
-  </head>
 </html>
