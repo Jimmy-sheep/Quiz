@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>My Document</title>
+    <script type="text/javascript">
+      function change() {
+        var header = document.getElementById("Hid");
+        header.innerHTML = "CSIE@CGU";
+        var para = document.getElementById("Pid");
+        para.innerHTML = "怎麼那麼棒！！.";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Change this document." onclick="change()">
+    <h1 id="Hid">CGU</h1>
+    <p id="Pid">好棒棒</p>
+  </body>
+  </head>
+</html>
