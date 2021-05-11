@@ -2,7 +2,6 @@ var dataUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAqu
 var data = $.getJSON(dataUrl);
 
 data.done( function( msg ) {
-	console.log(msg.result.results.A_Name_Ch);
 	$.each(msg.result.results, function(i, item){
 		$("#contain").html();
 		$("#contain").append($("<h2/>").text(item.A_Name_Ch));
