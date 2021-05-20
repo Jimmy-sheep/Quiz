@@ -19,13 +19,11 @@ class ToDoListItem extends React.Component {
 		var todoClass = this.props.item.done ? 
 			"ToDodone" : "ToDoundone";
 		return(
-			<li className="list-group-item ">
 			<div className={todoClass}>
 				<button type="button" onClick={this.onClickDone}>&radic;</button>	 
 					{this.props.item.value}
 				<button type="button" className="close" onClick={this.onClickClose}>&times;</button>
 			</div>
-			</li>	 
 		);
 	}
 }
