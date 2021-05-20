@@ -7,7 +7,6 @@ import LoginMultiButton from './LoginMultiButton.js';
 function LoginApp() {
 	return (
 		<div className="App">
-		<div>{LoginTitle()}</div>
 		<div>{LoginInputBox()}</div>
 		<div>{LoginMultiButton()}</div>
         </div>
